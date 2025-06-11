@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Ensure body background is white */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+html, body {
+    background-color: #ffffff !important; /* Force white background */
+    height: 100%; /* Ensure full height */
+}
+
+#chat-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto 0 auto; /* Adjusted margin to create space below the image */
+    padding: 20px;
+    background-color: #ffffff; /* Ensure chat container background is white */
+    box-shadow: none; /* Remove shadow to avoid dark effect */
+    border-radius: 8px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#messages {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff; /* Ensured it remains white */
+    color: #000; /* Darken the text color */
+}
+
+#input {
+    width: calc(100% - 100px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button#mic {
+    background-color: #28a745;
+}
+
+img {
+    display: block;
+    margin: 0 auto; /* Center the image and remove margin-top */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ffffff; /* Ensure image background is white */
+}
+
+@media (max-width: 600px) {
+    #chat-container {
+        width: 90%; /* Make the chat container wider on mobile */
+        margin-top: 10px; /* Adjust margin for mobile */
+    }
+
+    img {
+        width: 100px; /* Adjust image size for mobile */
+        height: 100px; /* Adjust image size for mobile */
+    }
+}
+
+.dark-mode {
+    background-color: #333; /* Dark background for the body */
+    color: #fff; /* Light text color */
+}
+
+.dark-mode #chat-container {
+    background-color: #444; /* Darker chat container */
+    border: 1px solid #555; /* Darker border */
+}
+
+.dark-mode img {
+    background-color: #444; /* Darker background for images */
+}
+
+.dark-mode #chat-container {
+    background-color: #444; /* Darker chat container */
+    border: 1px solid #555; /* Darker border */
+}
+
+#welcome-message {
+    text-align: center;
+    margin-top: 30px; /* Increased margin-top */
+    font-size: larger;
+}
